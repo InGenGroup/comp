@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - InGen Financial Services Pvt. Ltd.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #007bff; /* Blue background */
+            color: #007bff; /* White text */
+        }
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff; /* Blue submit button */
+            color: #fff; /* White text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Dark blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up for InGen Financial Services Pvt. Ltd.</h2>
+        <form id="signupForm" onsubmit="return signUp()">
+            <input type="text" id="username" name="username" placeholder="Username" required><br>
+            <input type="password" id="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <script>
+        function signUp() {
+            // Dummy signup functionality, replace with actual implementation if needed
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Redirect to YouTube link after successful signup
+            setTimeout(function() {
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            }, 3000); // Redirect after 3 seconds
+
+            // Prevent form submission
+            return false;
+        }
+    </script>
+</body>
+</html>
